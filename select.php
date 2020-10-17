@@ -72,26 +72,12 @@ $status = $stmt->execute();
               </tr>";
         while($row=mysqli_fetch_assoc($result)){
             echo "<tr>
-                      <td>{$row['name']}</td>
-                      <td>{$row['text']}</td>
-                      <td>{$row['url']}</td>
-                      
-                      
-                      
-                  </tr>";
+                        <td>{$row['name']}</td>
+                        <td>{$row['text']}</td>
+                        <td>{$row['url']}</td>
+                    </tr>";
         }
         echo "</table>";
-// echo '<table>';
-
-// echo '<tr>';
-// echo '<th>項目</th>';
-// while($row=mysqli_fetch_assoc($result)){
-// echo '<td>';
-// echo '<a href="' . $row['url'] . '">リンク</a>';  // ← ここです！
-// echo '</td>';
-// echo '</tr>';
-// }
-// echo '</table>';
     ?>
 </table>
 </div>
